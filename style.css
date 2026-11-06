@@ -75,3 +75,85 @@
   .albumFeature .albumInfo h2 { margin-bottom: 7px; }
   .albumFeature .year { margin-bottom: 12px; }
 }
+
+
+/* V14 — more legible home video, desktop and mobile.
+   This color adjustment does not move any desktop layout element. */
+.hero .shade { background-color: rgba(0,0,0,.22); }
+
+/* V14 — explicitly scoped ONLY to mobile and tablet-sized viewports. */
+@media screen and (max-width: 850px) {
+  header, header.onhero {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: flex-end;
+    overflow: visible;
+  }
+  header .logo, header.onhero .logo { display: none !important; }
+  header .menuBtn {
+    display: inline-flex !important;
+    position: relative;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    margin: 0 0 0 auto;
+    min-width: 58px;
+    max-width: calc(100vw - 24px);
+    padding: 8px 10px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav {
+    box-sizing: border-box;
+    left: 0; right: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .scrollPrompt {
+    width: max-content;
+    max-width: calc(100vw - 32px);
+    padding: 0;
+    gap: 6px;
+  }
+  .scrollPrompt span {
+    display: block;
+    font-size: 9px !important;
+    letter-spacing: .055em !important;
+    line-height: 1.35;
+    max-width: calc(100vw - 32px);
+    white-space: normal;
+    text-align: center;
+  }
+  .scrollPrompt svg { width: 15px; height: 23px; }
+  #identithree { scroll-margin-top: 65px; }
+}
+@media screen and (max-width: 450px) {
+  .scrollPrompt span { font-size: 8px !important; letter-spacing: .035em !important; }
+  .scrollPrompt { bottom: 8%; }
+  /* Make the entire first album panel visible below the fixed header. */
+  #identithree {
+    min-height: calc(100svh - 65px);
+    padding: 14px 18px;
+    gap: 10px;
+    align-content: center;
+  }
+  #identithree .coverwrap { max-width: min(61vw, 185px, 30svh); }
+  #identithree .coverwrap img { max-height: min(61vw, 185px, 30svh); }
+}
+@media screen and (max-width: 300px) {
+  header, header.onhero { padding-inline: 10px; }
+  header .menuBtn { min-width: 54px; padding: 7px 8px; font-size: 11px; }
+  #identithree .albumInfo h2 { font-size: 27px; }
+}
+.site-credit {
+  display: block;
+  font-size: 10px;
+  color: #92908e;
+  letter-spacing: .035em;
+  white-space: normal;
+}
+.site-credit a { color: #bdb8b3; text-decoration: underline; text-decoration-color: #795e50; text-underline-offset: 3px; }
