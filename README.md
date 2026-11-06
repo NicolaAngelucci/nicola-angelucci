@@ -1,0 +1,1 @@
+Nicola Angelucci — bozza v6 IT/EN. Aprire index.html dopo estrazione per navigare il sito. La pagina stampa ha un carosello con articoli visibili; tutti i materiali del repository sono caricati via URL GitHub. Nessuna modifica al repository GitHub.
