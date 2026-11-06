@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap');
+:root{--bg:#0a0a0a;--ink:#f4f0e9;--quiet:#bab4ac;--warm:#b98a73;--line:rgba(255,255,255,.15)}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;margin:0;font-weight:300}button,a,input{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}img{width:100%;display:block}header{height:76px;position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,82px);border-bottom:1px solid var(--line);background:rgba(8,8,8,.93);backdrop-filter:blur(14px)}header.onhero{position:fixed;left:0;right:0;background:rgba(8,8,8,.48)}.logo{font:500 15px 'Jost',sans-serif;letter-spacing:.17em;white-space:nowrap}nav{display:flex;gap:clamp(14px,2.1vw,35px);align-items:center}nav a,.lang a{color:#ddd;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:12px 0}nav a:hover,nav a.active,.lang a[aria-current=page]{color:#f0c4a7}.lang{display:flex;gap:8px;margin-left:12px}.lang a{opacity:.7}.lang a[aria-current=page]{opacity:1}.menuBtn{display:none;background:none;color:#fff;border:1px solid #777;padding:8px 12px;font-size:12px}.hero{height:100svh;min-height:590px;background:#000;position:relative;overflow:hidden}.videoBg,.shade{position:absolute;width:100%;height:100%;inset:0}.videoBg{object-fit:cover;object-position:center center}.shade{background:linear-gradient(90deg,rgba(0,0,0,.4),transparent 80%),linear-gradient(0deg,rgba(0,0,0,.42),transparent 58%);pointer-events:none}.heroCenter{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:94%;text-align:center}.hero h1{font:400 clamp(35px,5.2vw,79px)/1.05 'Jost',Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;margin:0 0 15px;text-shadow:0 2px 15px #0008}.hero .job{font:300 clamp(13px,1.5vw,19px) 'Jost',sans-serif;letter-spacing:.29em;color:#eee;text-transform:uppercase;margin:0}.scrollPrompt{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);background:none;border:0;color:#f8f4ef;display:flex;flex-direction:column;align-items:center;gap:14px;white-space:nowrap}.scrollPrompt span{font-size:12px;letter-spacing:.19em;text-transform:uppercase}.scrollPrompt svg{width:23px;height:32px;animation:drop 2.2s ease-in-out infinite;stroke:#d4ae96;fill:none;stroke-width:1.5}@keyframes drop{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(12px);opacity:.55}}.albumFeature{min-height:90vh;display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,7vw,110px);align-items:center;padding:clamp(100px,11vw,170px) clamp(24px,8vw,140px);background:#12100f}.albumFeature:nth-of-type(3){background:#141414}.albumFeature:nth-of-type(4){background:#111314}.albumFeature:nth-of-type(5){background:#141211}.albumFeature.reverse .coverwrap{order:2}.coverwrap{width:100%;max-width:min(520px,60vh);margin:auto;display:flex;align-items:center;justify-content:center}.coverwrap img{max-height:65vh;aspect-ratio:1;object-fit:contain;box-shadow:0 25px 60px #0006}.albumInfo{max-width:620px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.25em;color:#c7a18b;margin:0 0 25px}.albumInfo h2{font:400 clamp(46px,6vw,98px)/1.05 'Jost',sans-serif;letter-spacing:-.025em;margin:0 0 24px}.albumInfo .year{font-size:13px;letter-spacing:.18em;color:#a59a93;margin:0 0 42px}.under{display:inline-block;border:0;border-bottom:1px solid #c39b83;background:none;color:#f5efea;padding:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.16em;cursor:pointer}.under:hover{color:#e4b394}footer{border-top:1px solid var(--line);padding:45px clamp(25px,6vw,90px);display:flex;gap:28px;align-items:center;justify-content:space-between;color:#c6c2bd;font-size:12px}footer .footlinks{display:flex;gap:20px;flex-wrap:wrap}footer a{text-decoration:underline;text-underline-offset:5px;text-decoration-color:#8b6a59}.pageHead{padding:85px clamp(25px,8vw,140px) 50px;background:#111}.pageHead h1{font:400 clamp(48px,7vw,100px)/1.04 'Jost',sans-serif;margin:0;letter-spacing:.015em}.content{padding:65px clamp(25px,8vw,140px) 110px;max-width:1440px;margin:auto}.columns{display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(25px,6vw,100px);align-items:start}.columns img{max-height:640px;object-fit:cover}.prose{font-size:clamp(15px,1.25vw,18px);line-height:1.85;color:#d8d5d0}.prose p{margin-top:0;margin-bottom:22px}.archive{border-top:1px solid var(--line)}.archiveItem{border-bottom:1px solid var(--line);padding:17px 0;display:grid;grid-template-columns:85px 1fr;gap:24px}.archiveItem strong{font-weight:500}.archiveItem span{font-size:13px;color:#a9a29c}.recDetails{color:#aaa;font-size:13px;line-height:1.55;margin:7px 0 0}.recTitle{font-size:17px;margin:3px 0}.leadergrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:25px 0 95px}.leadergrid img{aspect-ratio:1;object-fit:cover}.leadergrid h3{font:400 21px 'Jost';margin:15px 0 5px}.leadergrid .year{font-size:12px;color:#a69d96}.sectionHeading{font:400 clamp(27px,3.3vw,44px) 'Jost';margin:0 0 29px}.scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 35px}.score{display:flex;justify-content:space-between;gap:15px;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px}.score a{border-bottom:1px solid #96745e;font-size:11px;white-space:nowrap;text-transform:uppercase;letter-spacing:.12em}.search{width:100%;padding:18px 16px;margin:0 0 26px;background:#171717;border:1px solid #555;color:#eee;font-size:15px;border-radius:0}.empty{padding:20px;color:#bbb}.detail{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(300px,1fr);gap:7vw;align-items:center}.detail img{width:100%;max-width:min(520px,60vh);margin:auto;aspect-ratio:1;object-fit:contain}.detail h2{font:400 clamp(46px,6vw,90px) 'Jost';margin:0 0 15px}.detail p{line-height:1.75;color:#bbb}.detailSection{margin-top:75px;border-top:1px solid var(--line);padding-top:35px}.detailSection h3{font:400 29px 'Jost';margin:0 0 22px}.reviewGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}.reviewCard img{max-height:480px;object-fit:contain;object-position:top;background:#1c1c1c}.reviewCard strong{display:block;font-size:19px;margin-top:15px}.reviewCard small{display:block;margin:6px 0 12px;color:#aaa}.reviewCard .under{margin-top:4px}.socials{display:flex;flex-direction:column;max-width:450px}.socials a{font-size:28px;font-family:Jost;padding:22px 0;border-bottom:1px solid var(--line)}.back{display:inline-block;margin:0 0 25px;border-bottom:1px solid #a08271;padding-bottom:7px;font-size:12px;letter-spacing:.15em;text-transform:uppercase}.smalltext{font-size:13px;color:#aaa;line-height:1.6}.cover-caption{font-size:12px;color:#aaa;margin:12px 0}.imageViewer{max-width:100%;height:auto;display:block;margin:0 auto}.staff{font-size:15px;line-height:1.85}.chip{font-size:11px;letter-spacing:.1em;color:#bd9d8d}.reviewCard a{display:inline-block;margin-right:15px}
+@media(max-width:850px){header{height:65px}header.onhero{background:rgba(8,8,8,.8)}nav{display:none;position:absolute;top:65px;left:0;right:0;background:#0b0b0b;padding:20px 25px;flex-direction:column;align-items:flex-start;gap:3px}nav.open{display:flex}.menuBtn{display:block}.hero h1{font-size:clamp(31px,7vw,60px);letter-spacing:.09em}.hero .job{font-size:12px}.albumFeature,.columns,.detail{grid-template-columns:1fr}.albumFeature{min-height:auto;gap:36px;padding:85px 28px}.albumFeature.reverse .coverwrap{order:0}.coverwrap{max-width:460px}.albumInfo{text-align:center}.albumInfo h2{font-size:clamp(44px,9vw,77px)}.scores{grid-template-columns:1fr}.reviewGrid{grid-template-columns:1fr 1fr}.leadergrid{grid-template-columns:repeat(2,1fr)}footer{flex-direction:column;align-items:flex-start}.pageHead{padding-top:80px}.detail{align-items:start}.detail img{max-height:52vh}}
+@media(max-width:450px){.hero h1{font-size:clamp(28px,8.3vw,42px);letter-spacing:.05em}.heroCenter{top:44%}.hero .job{font-size:10px;letter-spacing:.19em}.scrollPrompt{bottom:12%}.reviewGrid{grid-template-columns:1fr}.leadergrid{gap:15px}.leadergrid h3{font-size:17px}.archiveItem{grid-template-columns:55px 1fr;gap:13px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scrollPrompt svg{animation:none}}
+[hidden]{display:none!important}
+
+/* V11 approved: improve homepage video text contrast without modifying layout. */
+.hero .shade{background-color:rgba(0,0,0,.17)}
+.hero h1{text-shadow:0 2px 18px rgba(0,0,0,.85),0 0 36px rgba(0,0,0,.48)}
+.hero .job{text-shadow:0 2px 12px rgba(0,0,0,.9),0 0 26px rgba(0,0,0,.52)}
+
+/* V12 — ONLY MOBILE. Desktop styles remain untouched. */
+@media (max-width: 850px) {
+  /* Remove the site name from the mobile navigation only. */
+  header .logo { display: none; }
+  header { justify-content: flex-end; padding-inline: 18px; }
+  header .menuBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    max-width: 100%;
+    min-width: 64px;
+    min-height: 36px;
+    padding: 8px 12px;
+    margin-left: auto;
+    white-space: nowrap;
+    line-height: 1;
+  }
+  header nav { width: 100%; max-width: 100vw; }
+  /* Account for the sticky/fixed header when scrolling to an album. */
+  html { scroll-padding-top: 65px; }
+  .albumFeature { scroll-margin-top: 65px; }
+  .scrollPrompt span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    line-height: 1.4;
+    white-space: normal;
+    max-width: calc(100vw - 36px);
+    text-align: center;
+  }
+  .scrollPrompt { max-width: calc(100vw - 36px); gap: 9px; }
+  .scrollPrompt svg { width: 18px; height: 27px; }
+}
+@media (max-width: 450px) {
+  /* A complete album fits in the screen after the Discover arrow is tapped. */
+  .albumFeature {
+    min-height: calc(100svh - 65px);
+    padding: 22px 18px 26px;
+    gap: 16px;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: minmax(0,1fr);
+  }
+  .albumFeature .coverwrap { max-width: min(72vw, 210px, 36svh); }
+  .albumFeature .coverwrap img { width: 100%; max-height: min(72vw, 210px, 36svh); }
+  .albumFeature .albumInfo { width: 100%; text-align: center; }
+  .albumFeature .albumInfo h2 {
+    font-size: clamp(27px, 8vw, 39px);
+    line-height: 1.1;
+    margin-bottom: 9px;
+    overflow-wrap: anywhere;
+  }
+  .albumFeature .eyebrow { font-size: 10px; margin-bottom: 9px; }
+  .albumFeature .year { font-size: 11px; margin-bottom: 18px; }
+  .albumFeature .under { font-size: 10px; padding-bottom: 5px; }
+  .scrollPrompt span { font-size: 9px; letter-spacing: .09em; }
+  .scrollPrompt { bottom: 9%; }
+}
+@media (max-width: 450px) and (max-height: 570px) {
+  .albumFeature { padding-block: 14px 18px; gap: 10px; }
+  .albumFeature .coverwrap { max-width: min(64vw, 185px, 32svh); }
+  .albumFeature .coverwrap img { max-height: min(64vw, 185px, 32svh); }
+  .albumFeature .eyebrow { margin-bottom: 6px; }
+  .albumFeature .albumInfo h2 { margin-bottom: 7px; }
+  .albumFeature .year { margin-bottom: 12px; }
+}
