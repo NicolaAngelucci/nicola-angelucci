@@ -79,7 +79,7 @@
 
 /* V14 — more legible home video, desktop and mobile.
    This color adjustment does not move any desktop layout element. */
-.hero .shade { background-color: rgba(0,0,0,.22); }
+.hero .shade { background-color: rgba(0,0,0,.25); }
 
 /* V14 — explicitly scoped ONLY to mobile and tablet-sized viewports. */
 @media screen and (max-width: 850px) {
