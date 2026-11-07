@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(!arrow){section.scrollIntoView({behavior:'smooth'});return;}
     const r=arrow.getBoundingClientRect();
     const arrowBottomOnPage=r.bottom+window.scrollY;
-    // Position the arrow above the lower edge of the visible viewport.
-    // Reserve extra room for Safari's dynamic bars / short viewport.
-    const bottomSpace=Math.max(64,Math.min(105,window.innerHeight*.11));
+    // Place the arrow near the lower edge without cutting the album cover.
+    // Keep a modest gap below the arrow while showing the full album cover.
+    const bottomSpace=window.matchMedia('(max-width: 850px)').matches ? 36 : 28;
     let desiredTop=arrowBottomOnPage-window.innerHeight+bottomSpace;
     const maxScroll=document.documentElement.scrollHeight-window.innerHeight;
     window.scrollTo({top:Math.max(0,Math.min(maxScroll,desiredTop)),behavior:'smooth'});
