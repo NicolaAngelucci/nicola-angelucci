@@ -201,3 +201,61 @@ header.brand--expanded .nav-logo-name { max-width: 260px; opacity: 1; }
 @media (prefers-reduced-motion: reduce) {
   header .logo .nav-logo-name { transition: none; }
 }
+
+
+/* V27 homepage editorial album announcement, with no change to hero title/logo. */
+.hero .new-release {
+  position:absolute; bottom:clamp(90px,13vh,145px); left:clamp(26px,5.2vw,84px);
+  display:flex;align-items:center;gap:17px; z-index:4;
+  color:#faf4ef;text-decoration:none; max-width:min(360px,36vw);
+  transition:transform .3s ease,opacity .3s ease;
+}
+.hero .new-release:hover{transform:translateY(-3px)}
+.hero .new-release img{display:block;width:clamp(60px,6.2vw,90px);height:clamp(60px,6.2vw,90px);aspect-ratio:1;object-fit:cover;box-shadow:0 12px 25px #0008}
+.hero .new-release .release-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+.hero .new-release .release-label{font:400 9px 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#e7bea8}
+.hero .new-release .release-title{font:400 clamp(17px,1.6vw,23px) 'Jost',sans-serif;line-height:1.1;white-space:nowrap}
+.hero .new-release .release-link{font-size:10px;color:#ddd3cb;letter-spacing:.09em;text-transform:uppercase}
+.hero .scrollPrompt{bottom:7%;gap:0}
+.hero .scrollPrompt svg{height:30px;width:23px}
+@media(max-width:850px){
+ .hero .new-release{bottom:105px;left:clamp(15px,4vw,24px);gap:11px;max-width:calc(100vw - 30px)}
+ .hero .new-release img{width:62px;height:62px}
+ .hero .new-release .release-title{font-size:17px}
+ .hero .new-release .release-label{font-size:8px}
+ .hero .new-release .release-link{font-size:9px}
+ .hero .scrollPrompt{bottom:4%;}
+}
+@media(max-width:450px){
+ .hero .new-release{bottom:100px;left:18px}
+ .hero .new-release img{width:57px;height:57px}
+ .hero .scrollPrompt{bottom:4%}
+}
+@media(max-height:630px) and (max-width:850px){
+ .hero .new-release{bottom:77px}
+ .hero .new-release img{width:48px;height:48px}
+ .hero .scrollPrompt{bottom:3%}
+}
+@media(prefers-reduced-motion:reduce){.hero .new-release{transition:none}}
+
+/* V28 – language switch aligned with the other navbar items. */
+header nav .lang {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+  line-height: 1;
+  vertical-align: middle;
+}
+header nav .lang a,
+header nav .lang > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+@media(max-width:850px) {
+  header nav .lang { align-self: flex-start; margin-left: 0; padding-top: 10px; }
+}
