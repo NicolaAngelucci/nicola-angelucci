@@ -175,4 +175,31 @@
 @media (prefers-reduced-motion: reduce) {
   .hero .new-release { transition: none; }
 }
+
+/* V30 — lower-right corner; centered album content; no vertical rule. */
+.hero .new-release {
+  top: auto;
+  left: auto;
+  right: clamp(18px,2.4vw,40px);
+  bottom: 22px;
+  padding: 0;
+  border: 0;
+  border-left: none;
+  width: clamp(166px,15vw,215px);
+  align-items: center;
+  text-align: center;
+}
+.hero .new-release img { margin-left:auto; margin-right:auto; }
+.hero .new-release .release-label,
+.hero .new-release .release-title { text-align:center; width:100%; }
+.hero .new-release .release-link { margin-left:auto; margin-right:auto; }
+@media (max-width:850px) {
+  .hero .new-release { top:auto;left:auto;right:14px;bottom:52px;width:148px;padding:0;border:0;align-items:center;text-align:center; }
+}
+@media (max-width:500px) {
+  .hero .new-release { top:auto;left:auto;right:10px;bottom:62px;width:118px;padding:0;border:0;align-items:center;text-align:center; }
+}
+@media (max-width:380px) and (max-height:700px) {
+  .hero .new-release { top:auto;left:auto;right:8px;bottom:60px;width:106px;padding:0;border:0; }
+}
 </style></head><body><header class="onhero"><a class="logo" href="index.html">NICOLA ANGELUCCI</a><button aria-controls="mainNav" aria-expanded="false" class="menuBtn" type="button">MENU</button><nav id="mainNav"><a class="active" href="index.html">Home</a><a class="" href="biography.html">Biografia</a><a class="" href="discography.html">Discografia</a><a class="" href="scores.html">Spartiti</a><a class="" href="contact.html">Contatti</a><span class="lang"><a aria-current="page" href="../it/index.html" lang="it">IT</a><span style="color:#777">/</span><a aria-current="false" href="../en/index.html" lang="en">EN</a></span></nav></header><main><section class="hero" id="top"><video aria-label="Nicola Angelucci" autoplay="" class="videoBg" loop="" muted="" playsinline="" preload="auto"><source src="../assets/videos/Canvas%20lungo.mp4" type="video/mp4"/></video><div class="shade"></div><div class="heroCenter"><img alt="Nicola Angelucci logo" class="brand-mark" height="100" src="../assets/images/Monogramma%20K%20Bianco%20Minimalista.png" width="100"/><h1>NICOLA ANGELUCCI</h1><p class="job">DRUMMER · COMPOSER · EDUCATOR</p></div><a aria-label="Apri Identithree" class="new-release" href="album-identithree.html"><img alt="Identithree · cover" src="../assets/albums/indentithree.jpeg"/><span class="release-copy"><span class="release-label">NUOVO ALBUM · 2026</span><span class="release-title">Identithree</span><span class="release-link">Scopri il disco</span></span></a><button aria-label="Scorri verso gli album" class="scrollPrompt" data-scroll="identithree" type="button"><span>Scopri tutti gli album</span><svg aria-hidden="true" viewbox="0 0 24 32"><path d="M12 1v27M3 20l9 9 9-9"></path></svg></button></section><section class="albumFeature" id="identithree"><div class="coverwrap"><a aria-label="Scopri l’album: Identithree" href="album-identithree.html"><img alt="Cover: Identithree" loading="lazy" src="../assets/albums/indentithree.jpeg"/></a></div><div class="albumInfo"><p class="eyebrow">GleAM Records · 2026</p><h2>Identithree</h2><a class="under" href="album-identithree.html">Scopri l’album</a></div><a aria-label="Scopri Changes" class="album-jump" href="#changes"><svg aria-hidden="true" viewbox="0 0 24 32"><path d="M12 2v26M3 20l9 9 9-9"></path></svg></a></section><section class="albumFeature reverse" id="changes"><div class="coverwrap"><a aria-label="Scopri l’album: Changes" href="album-changes.html"><img alt="Cover: Changes" loading="lazy" src="../assets/albums/Changes%20cover.jpg"/></a></div><div class="albumInfo"><h2>Changes</h2><p class="year">2021</p><a class="under" href="album-changes.html">Scopri l’album</a></div><a aria-label="Scopri Beyond the Drums" class="album-jump" href="#beyond-the-drums"><svg aria-hidden="true" viewbox="0 0 24 32"><path d="M12 2v26M3 20l9 9 9-9"></path></svg></a></section><section class="albumFeature" id="beyond-the-drums"><div class="coverwrap"><a aria-label="Scopri l’album: Beyond the Drums" href="album-beyond-the-drums.html"><img alt="Cover: Beyond the Drums" loading="lazy" src="../assets/albums/Nicola%20Angelucci%20%E2%80%93%20Beyond%20The%20Drums%20cover.jpg"/></a></div><div class="albumInfo"><h2>Beyond the Drums</h2><p class="year">2013</p><a class="under" href="album-beyond-the-drums.html">Scopri l’album</a></div><a aria-label="Scopri The First One" class="album-jump" href="#the-first-one"><svg aria-hidden="true" viewbox="0 0 24 32"><path d="M12 2v26M3 20l9 9 9-9"></path></svg></a></section><section class="albumFeature reverse" id="the-first-one"><div class="coverwrap"><a aria-label="Scopri l’album: The First One" href="album-the-first-one.html"><img alt="Cover: The First One" loading="lazy" src="../assets/albums/Nicola%20Angelucci%20-%20The%20First%20One%20cover.jpg"/></a></div><div class="albumInfo"><h2>The First One</h2><p class="year">2010</p><a class="under" href="album-the-first-one.html">Scopri l’album</a></div><a aria-label="Torna su" class="album-jump up" href="#top"><span>Torna su</span><svg aria-hidden="true" viewbox="0 0 24 32"><path d="M12 30V4M3 12l9-9 9 9"></path></svg></a></section></main><footer><div>© NICOLA ANGELUCCI</div><div class="footlinks"><a href="https://www.instagram.com/nikangelucci/" rel="noopener" target="_blank">INSTAGRAM</a><a href="https://www.facebook.com/nicolaangelucciofficial" rel="noopener" target="_blank">FACEBOOK</a><a href="https://www.youtube.com/@nikangelucci" rel="noopener" target="_blank">YOUTUBE</a><a href="https://open.spotify.com/intl-it/artist/6oWLcJrtJ12xgHIqOw0FEK?si=9ErU8SwfTuW76TPOne0qnA" rel="noopener" target="_blank">SPOTIFY</a></div><div class="site-credit">Website design &amp; development by <a href="https://jordancorda.com" rel="noopener" target="_blank">Jordan Corda</a></div></footer></body></html>
