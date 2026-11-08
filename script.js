@@ -27,3 +27,31 @@ document.addEventListener('DOMContentLoaded',()=>{
   const s=document.getElementById('scoreSearch');if(s){let rows=[...document.querySelectorAll('.score')];const empty=document.getElementById('noResults');s.addEventListener('input',()=>{let q=s.value.trim().toLocaleLowerCase(),num=0;rows.forEach(x=>{let ok=x.dataset.title.toLocaleLowerCase().includes(q);x.hidden=!ok;if(ok)num++});if(empty)empty.hidden=num>0;});}
   const video=document.querySelector('video.videoBg');if(video){video.muted=true;video.defaultMuted=true;video.play().catch(()=>{});}
 });
+
+
+// V26: only the navbar branding is dynamic. Works on IT and EN pages.
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  const brand = header?.querySelector('a.logo');
+  if (!brand) return;
+
+  const icon = document.createElement('img');
+  icon.className = 'nav-logo-icon';
+  icon.src = '../assets/images/Monogramma%20K%20Bianco%20Minimalista.png';
+  icon.alt = '';
+  icon.setAttribute('aria-hidden', 'true');
+  const name = document.createElement('span');
+  name.className = 'nav-logo-name';
+  name.textContent = 'NICOLA ANGELUCCI';
+  brand.replaceChildren(icon, name);
+
+  const onHomepage = !!document.querySelector('.hero');
+  const updateBrand = () => {
+    const expanded = !onHomepage || window.scrollY > 50;
+    header.classList.toggle('brand--compact', !expanded);
+    header.classList.toggle('brand--expanded', expanded);
+  };
+  updateBrand();
+  window.addEventListener('scroll', updateBrand, { passive: true });
+  window.addEventListener('pageshow', updateBrand);
+});

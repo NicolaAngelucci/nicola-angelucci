@@ -157,3 +157,47 @@
   white-space: normal;
 }
 .site-credit a { color: #bdb8b3; text-decoration: underline; text-decoration-color: #795e50; text-underline-offset: 3px; }
+
+
+/* V26: dynamic navbar branding; no changes to hero logo, pages or album layout. */
+header .logo, header.onhero .logo {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 0 1 auto;
+  text-decoration: none;
+  white-space: nowrap;
+}
+header .logo .nav-logo-icon {
+  display: block;
+  width: 33px;
+  height: 33px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+header .logo .nav-logo-name {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 260px;
+  opacity: 1;
+  white-space: nowrap;
+  transition: max-width .6s ease, opacity .45s ease;
+}
+header.brand--compact .nav-logo-name { max-width: 0; opacity: 0; }
+header.brand--expanded .nav-logo-name { max-width: 260px; opacity: 1; }
+@media (max-width: 850px) {
+  header .logo, header.onhero .logo {
+    display: inline-flex !important;
+    gap: 7px;
+  }
+  header .logo .nav-logo-icon { width: 28px; height: 28px; }
+  header .logo .nav-logo-name { font-size: 10px; letter-spacing: .075em; }
+  header.brand--expanded .nav-logo-name {
+    max-width: min(180px, calc(100vw - 116px));
+  }
+  header .menuBtn { flex: 0 0 auto; margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  header .logo .nav-logo-name { transition: none; }
+}
