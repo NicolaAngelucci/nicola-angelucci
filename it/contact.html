@@ -1,3 +1,55 @@
 <!DOCTYPE html>
-
-<html lang="it"><head><link href="../style.css?v=28" rel="stylesheet"/><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#0a0a0a" name="theme-color"/><title>Contatti | Nicola Angelucci</title><meta content="Nicola Angelucci — Drummer &amp; Composer" name="description"/><link href="../it/contact.html" hreflang="it" rel="alternate"/><link href="../en/contact.html" hreflang="en" rel="alternate"/><link href="../assets/images/Monogramma%20K%20Bianco%20Minimalista.png?v=25" rel="icon" type="image/png"/><link href="../assets/images/Monogramma%20K%20Bianco%20Minimalista.png?v=25" rel="apple-touch-icon"/><script defer="True" src="../script.js?v=28"></script></head><body><header class=""><a class="logo" href="index.html">NICOLA ANGELUCCI</a><button aria-controls="mainNav" aria-expanded="false" class="menuBtn" type="button">MENU</button><nav id="mainNav"><a class="" href="index.html">Home</a><a class="" href="biography.html">Biografia</a><a class="" href="discography.html">Discografia</a><a class="" href="scores.html">Spartiti</a><a class="active" href="contact.html">Contatti</a><span class="lang"><a aria-current="page" href="../it/contact.html" lang="it">IT</a><span style="color:#777">/</span><a aria-current="false" href="../en/contact.html" lang="en">EN</a></span></nav></header><main><section class="pageHead"><h1>Contatti</h1></section><section class="content"><div class="columns"><div class="socials"><a href="https://www.instagram.com/nikangelucci/" rel="noopener" target="_blank">Instagram</a><a href="https://www.facebook.com/nicolaangelucciofficial" rel="noopener" target="_blank">Facebook</a><a href="https://www.youtube.com/@nikangelucci" rel="noopener" target="_blank">YouTube</a><a href="https://open.spotify.com/intl-it/artist/6oWLcJrtJ12xgHIqOw0FEK?si=9ErU8SwfTuW76TPOne0qnA" rel="noopener" target="_blank">Spotify</a></div><div><img alt="Nicola Angelucci" loading="lazy" src="../assets/images/Nik%20Angelucci%20photo%20Andrea%20Boccalini_edited.jpg"/></div></div></section></main><footer><div>© NICOLA ANGELUCCI</div><div class="site-credit">Website design &amp; development by <a href="https://jordancorda.com" rel="noopener" target="_blank">Jordan Corda</a></div></footer></body></html>
+<html lang="it"><head><link href="../style.css?v=28" rel="stylesheet"/><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#0a0a0a" name="theme-color"/><title>Contatti | Nicola Angelucci</title><meta content="Nicola Angelucci — Drummer &amp; Composer" name="description"/><link href="../it/contact.html" hreflang="it" rel="alternate"/><link href="../en/contact.html" hreflang="en" rel="alternate"/><link href="../assets/images/Monogramma%20K%20Bianco%20Minimalista.png?v=25" rel="icon" type="image/png"/><link href="../assets/images/Monogramma%20K%20Bianco%20Minimalista.png?v=25" rel="apple-touch-icon"/><script defer="True" src="../script.js?v=28"></script><style id="fullpage-photo-layout">
+/* FULL-PAGE PHOTOGRAPHIC DESIGN — scoped to Biography and Contact only. */
+html, body {min-height:100%;}
+body.photo-page {background:#090909; position:relative; isolation:isolate;}
+body.photo-page::before {
+  content:""; position:fixed; inset:0; z-index:-2;
+  background-image:var(--fullpage-photo);
+  background-position:var(--photo-position,center center);
+  background-repeat:no-repeat; background-size:var(--photo-size,cover);
+  filter:var(--photo-filter,none);
+  transform:translateZ(0);
+}
+body.photo-page::after {
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:var(--photo-overlay);
+}
+body.photo-page header {background:rgba(8,8,8,.5);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+body.photo-page main {position:relative; min-height:calc(100vh - 160px); background:transparent;}
+body.photo-page .pageHead {padding:clamp(108px,12vh,158px) clamp(24px,7vw,110px) 12px; background:transparent;}
+body.photo-page .pageHead h1 {font-size:clamp(42px,5vw,74px);text-shadow:0 4px 20px rgba(0,0,0,.6)}
+body.bio-fullphoto .pageHead h1, body.bio-fullphoto .prose {backdrop-filter:blur(0px);} 
+body.photo-page .content {background:transparent; max-width:none; padding:20px clamp(24px,7vw,110px) 105px;}
+body.photo-page footer {position:relative; background:rgba(8,8,8,.44);border-color:rgba(255,255,255,.13);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+body.photo-page .columns {display:block;}
+body.photo-page .old-photo {display:none !important;}
+/* Biography: understated reading surface. The image remains full bleed behind it. */
+body.bio-fullphoto {--photo-position:73% center;--photo-size:cover;--photo-filter:contrast(1.08) saturate(1.05) brightness(1.02);--photo-overlay:linear-gradient(90deg,rgba(5,5,5,.82) 0%,rgba(5,5,5,.73) 29%,rgba(5,5,5,.46) 55%,rgba(5,5,5,.05) 100%);}
+body.bio-fullphoto .prose {width:min(100%,700px);max-width:700px;padding:0 0 25px; color:#f3efeb;}
+body.bio-fullphoto .prose p {font-size:clamp(15px,1.2vw,17px);line-height:1.85;color:#eee9e5;text-shadow:0 2px 10px rgba(0,0,0,.58);}
+body.bio-fullphoto .prose p:first-child {font-size:clamp(18px,1.5vw,21px);line-height:1.65;color:#fff;}
+/* Contacts: image is dominant; social links sit inside the available negative space. */
+body.contact-fullphoto {--photo-position:55% 24%;--photo-size:cover;--photo-filter:contrast(1.02) brightness(.98);--photo-overlay:linear-gradient(90deg,rgba(0,0,0,.89) 0%,rgba(0,0,0,.69) 34%,rgba(0,0,0,.21) 73%,rgba(0,0,0,.27) 100%);}
+body.contact-fullphoto main {min-height:calc(100svh - 135px);}
+body.contact-fullphoto .content {padding-top:38px;padding-bottom:90px;}
+body.contact-fullphoto .socials {display:flex;flex-direction:column;align-items:stretch;gap:0;max-width:450px;margin:0;}
+body.contact-fullphoto .socials a {font-family:'Jost',sans-serif;font-weight:400;font-size:28px;letter-spacing:normal;line-height:normal;color:#f4f0e9;text-shadow:none;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.15);padding:22px 0;transition:color .2s ease,border-color .2s ease;}
+body.contact-fullphoto .socials a:hover {color:#e8bf9f;border-color:#e8bf9f;}
+@media(max-width:850px){
+  body.photo-page .pageHead {padding-top:106px;padding-bottom:8px;}
+  body.photo-page .content {padding-bottom:75px;}
+  body.bio-fullphoto {--photo-position:67% center;--photo-overlay:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.68) 58%,rgba(0,0,0,.47));}
+  body.bio-fullphoto .prose {max-width:690px;}
+  body.contact-fullphoto {--photo-position:57% center;--photo-overlay:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.6) 60%,rgba(0,0,0,.3));}
+}
+@media(max-width:520px){
+  body.photo-page .pageHead {padding:88px 21px 9px;}
+  body.photo-page .content {padding:18px 21px 62px;}
+  body.bio-fullphoto {--photo-position:65% center;--photo-overlay:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.76));}
+  body.bio-fullphoto .prose p {font-size:15px;line-height:1.76;}
+  body.contact-fullphoto {--photo-position:58% center;--photo-overlay:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.54));}
+  body.contact-fullphoto .socials a {font-size:26px;padding:18px 0;}
+}
+@media(prefers-reduced-motion:reduce){body.contact-fullphoto .socials a{transition:none;}}
+</style></head><body class="photo-page contact-fullphoto" style="--fullpage-photo:url('../assets/images/NicolaAngelucci2.png');"><header class=""><a class="logo" href="index.html">NICOLA ANGELUCCI</a><button aria-controls="mainNav" aria-expanded="false" class="menuBtn" type="button">MENU</button><nav id="mainNav"><a class="" href="index.html">Home</a><a class="" href="biography.html">Biografia</a><a class="" href="discography.html">Discografia</a><a class="" href="scores.html">Spartiti</a><a class="active" href="contact.html">Contatti</a><span class="lang"><a aria-current="page" href="../it/contact.html" lang="it">IT</a><span style="color:#777">/</span><a aria-current="false" href="../en/contact.html" lang="en">EN</a></span></nav></header><main><section class="pageHead"><h1>Contatti</h1></section><section class="content"><div class="columns"><div class="socials"><a href="https://www.instagram.com/nikangelucci/" rel="noopener" target="_blank">Instagram</a><a href="https://www.facebook.com/nicolaangelucciofficial" rel="noopener" target="_blank">Facebook</a><a href="https://www.youtube.com/@nikangelucci" rel="noopener" target="_blank">YouTube</a><a href="https://open.spotify.com/intl-it/artist/6oWLcJrtJ12xgHIqOw0FEK?si=9ErU8SwfTuW76TPOne0qnA" rel="noopener" target="_blank">Spotify</a></div></div></section></main><footer><div>© NICOLA ANGELUCCI</div><div class="site-credit">Website design &amp; development by <a href="https://jordancorda.com" rel="noopener" target="_blank">Jordan Corda</a></div></footer></body></html>
